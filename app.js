@@ -31,7 +31,6 @@ app.post('/', (req, res) => {
   res.status(200).end();
 });
 
-// Start the server
-app.listen(port, () => {
-  console.log(`\nListening on port ${port}\n`);
-});
+// 删除 app.listen(...)
+// 添加这一行：
+module.exports = app;
